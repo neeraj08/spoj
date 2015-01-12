@@ -1,0 +1,2 @@
+#include<stdio.h>
+int main(){static int arr[100001];char a,d;int n,q,i,b,c,r=0;n=q=0;while((a=getchar())!=' ')n=n<<3+n<<1+a-48;while((a=getchar())!='\n')q=(q<<3)+(q<<1)+a-48;while(q--){d=getchar();getchar();b=c=0;while((a=getchar())!=' ')b=(b<<3)+(b<<1)+a-48;while((a=getchar())!='\n')c=(c<<3)+(c<<1)+a-48;if(d=='1'){r=0;for(i=b;i<=c;i++)if(arr[i]%3==0)r++;printf("%d\n",r);}else for(i=b;i<=c;i++)arr[i]++;}return 0;}
